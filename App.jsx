@@ -1,16 +1,13 @@
-/* eslint-disable no-unused-vars */
-import { View, Text } from 'react-native';
 import React from 'react';
-import { Provider, useSelector } from 'react-redux';
-import { store } from './src/redux/store/store';
+import { Provider } from 'react-redux';
 import Counter from './src/Components/Counter';
+import store from './src/redux/store/store';
+import { View } from 'react-native-reanimated/lib/typescript/Animated';
 
-const App = () => {
-  return (
-    <Provider store={store}>
-      <Counter/>
-    </Provider>
-  );
-};
+const App = () => (
+  <View>
+    
+  </View>
+);
 
 export default App;

@@ -1,10 +1,11 @@
 import { View, Text, Button, StyleSheet } from 'react-native';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment, reset } from '../redux/slice/counderSlice';
+import { decrement, increment, reset } from '../redux/slice/counterSlice';
 
 const Counter = () => {
-  const count = useSelector((state) => state.counter.value);
+  // Ensure you are selecting the 'value' property from state.counter
+  const count = useSelector((state) => state.counter?.value || 0);
   const dispatch = useDispatch();
 
   return (
