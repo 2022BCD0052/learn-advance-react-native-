@@ -1,13 +1,15 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import Counter from './src/Components/Counter';
-import store from './src/redux/store/store';
-import { View } from 'react-native-reanimated/lib/typescript/Animated';
+import { View, Text } from 'react-native'
+import React from 'react'
+import One from './src/Components/One'
 
-const App = () => (
-  <View>
-    
-  </View>
-);
+const App = () => {
+  return (
+    <View>
+      <Text>App</Text>
+      <One/>
+      
+    </View>
+  )
+}
 
-export default App;
+export default App
